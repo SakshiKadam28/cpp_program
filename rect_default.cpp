@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+class Rectangle
+{
+    int length, breadth;
+
+public:
+    Rectangle()
+    {
+        length = 10;
+        breadth = 5;
+    }
+
+    void display()
+    {
+        cout << "Length = " << length << endl;
+        cout << "Breadth = " << breadth << endl;
+        cout << "Area = " << length * breadth << endl;
+    }
+};
+
+int main()
+{
+    Rectangle r;
+
+    r.display();
+
+    return 0;
+}
